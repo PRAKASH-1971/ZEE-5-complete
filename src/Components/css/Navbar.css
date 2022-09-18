@@ -1,0 +1,194 @@
+.navv {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between !important;
+    padding: 5px;
+    background-color: rgb(15,6,23);
+    margin-bottom: 20px;
+    /* background-color: rgb(15,6,23); */
+    /* Animation */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    /* border-bottom: 0.5px solid white; */
+}
+
+.navv-linkss{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.navv-linkss img{
+    width: fit-content;
+    height:80px;
+    margin-right: 20px;
+}
+.navv-linkss a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+}
+
+.navv-linkss a h4{
+    font-weight: 600;
+    font-size: 18px;
+}
+.navv-linkss a h4:hover{
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+
+#navv-links{
+    display: flex;
+    flex-direction: row;
+    width: 55% !important;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    cursor: pointer;
+}
+#navv-link{
+    width: 300px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .navv-linkss .input-div input{
+    width: 300px;
+    padding: 7px 40px;
+    background-color: rgb(15,6,23);
+    border: 1px solid rgb(84,80,87);
+    border-radius: 5px;
+} */
+.navv-linkss .input-div i{
+    position: relative;
+    right: -23px;
+}
+.login-button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(15,6,23);
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+}
+.login-button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+.buy-button{
+    padding: 12px 18px;
+    border-radius: 10px;
+    background-color: rgb(92,22,149);
+    color: white;
+    font-weight: 600;
+}
+.navv-linkss i{
+    color: white;
+}
+
+.sidebar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(15,6,23);
+    gap: 50px;
+    color: white;
+    padding-top: 50px;
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+}
+
+.fa-align-justify{
+    display: none;
+}
+
+
+/* Login */
+#main-login{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(15,6,23);
+    position: relative;
+    top: 0;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+#login img{
+    width: 400px;
+    height: fit-content;
+}
+#login input{
+    background: rgb(15,6,23);
+    border: none;
+    color: white;
+    margin: 20px 0px;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+#login a{
+    text-decoration: none;
+    color: rgb(167,133,255);
+    margin: 25px auto;
+    cursor: pointer;
+}
+#login button{
+    background: rgb(130,48,198);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 400px !important;
+}
+
+@media only screen and (max-width: 950px){
+  #navv-links{
+    display: none !important;
+}
+#navv-link{
+      display: none !important;
+  }
+}
+@media only screen and (max-width: 500px){
+    #main-login{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #login img{
+        width: 300px;
+        margin: auto;
+    }
+    #login input{
+        width: 300px;
+        margin: auto;
+    }
+    #login{
+        width: 100%;
+    }
+    #login button{
+        width: 250px !important;
+    }
+}
