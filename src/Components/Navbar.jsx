@@ -62,6 +62,7 @@ function Navbar() {
                     <Link to='/zee5/Movies'><h4>Movies</h4></Link>
                     <Link to='/zee5/Web-series'><h4>Web Series</h4></Link>
                     <Link to='/zee5/News'><h4>News</h4></Link>
+                    <Link to='/zee5/Login'><h4>Login</h4></Link>
                 </div>
             </Fade>
 
